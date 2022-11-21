@@ -1,0 +1,43 @@
+{
+    subject = "КонфУпр";
+    groups = for(1 17 1 "IKBO-&-21");
+    student1 = 
+    (
+        age(20)
+        group("IKBO-16-21")
+        name("Student1")
+    );
+    student2 =
+    (
+        age(17)
+        group("IKBO-16-21")
+        name("Student2")
+    );
+    student3 =
+    (
+        age(19)
+        group("IKBO-16-21")
+        name("Student3")
+    );
+}
+
+(
+    groups(
+            &groups
+    )
+    students(
+            &student1
+            &student2
+            &student3
+        (
+            age(47) group("IKBO-16-21") name("Student4")
+        )
+        (
+            age(74) group("IKBO-16-21") name("Student5")
+        )
+        (
+            age(47) group("IKBO-16-21") name("Student6")
+        )
+    ) 
+subject(&subject)
+)
